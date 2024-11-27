@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuHome"
+        android:title="Home"
+        android:icon="@mipmap/ic_homess"/>
+    <item
+        android:id="@+id/menuHistory"
+        android:title="History"
+        android:icon="@mipmap/history"/>
+
+    <item
+        android:id="@+id/placeholder"
+        android:checkable="false"
+        android:title="TODO" />
+
+    <item
+        android:id="@+id/menuNotification"
+        android:title="Notification"
+        android:icon="@mipmap/notification"/>
+    <item
+        android:id="@+id/menuProfile"
+        android:title="Profile"
+        android:icon="@mipmap/user"/>
+</menu>

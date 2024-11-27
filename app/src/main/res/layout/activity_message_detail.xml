@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MessageDetailActivity">
+
+    <TextView
+        android:id="@+id/mes_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="万寿岩国家考古遗址公园业态“上新”"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mes_detail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2024-10-02 19:24"
+        app:layout_constraintStart_toStartOf="@+id/mes_detail_title"
+        app:layout_constraintTop_toBottomOf="@+id/mes_detail_title" />
+
+    <TextView
+        android:id="@+id/mes_detail_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="作者：小七"
+        app:layout_constraintStart_toEndOf="@+id/mes_detail_time"
+        app:layout_constraintTop_toTopOf="@+id/mes_detail_time" />
+
+    <TextView
+        android:id="@+id/mes_detail_contacts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="（福建记者 马丹凤 通讯员 陈登达 文/图） 世界第一枚虾琥珀、世界最大螃蟹琥珀、世界最大的蚊类交尾琥珀、全球体型最大的鞭蝎琥珀、世界最稀有的蝴蝶琥珀、触角夸张的“大角蝽”、最早的蘑菇琥珀、惊艳的恐龙羽毛……2日，三明市三元区岩前镇，万寿岩昆虫历史博物馆开业。"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mes_detail_author" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

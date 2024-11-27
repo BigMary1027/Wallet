@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/my_wallets"
+        android:icon="@mipmap/my_wallets"
+        android:title="My wallets"/>
+    <item android:id="@+id/smart_invest"
+        android:icon="@mipmap/smart_invest"
+        android:title="Smart Invest"/>
+    <item android:id="@+id/coin_market"
+        android:icon="@mipmap/history"
+        android:title="History"/>
+    <item android:id="@+id/notification"
+        android:icon="@mipmap/notification"
+        android:title="Notification"/>
+</menu>

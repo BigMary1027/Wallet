@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/all_bac"
+    tools:context=".fragment.MyWalletsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/agent_manage"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <ImageView
+                android:id="@+id/my_wallet_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/search"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="Hi,James"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="What would i can help you today?"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="236dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/add_cards"
+                android:layout_width="40dp"
+                android:layout_height="76dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/box_shadow"
+                android:layout_marginLeft="20dp"
+                android:elevation="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/add"/>
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/all_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:src="@mipmap/centermenu"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/myCardView"
+            android:clipToPadding="false"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="Recent service"/>
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/scan_go"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/light_purple_bg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_bottom"
+                    android:src="@mipmap/scan_go"
+                    app:layout_constraintStart_toStartOf="@+id/scan_go"
+                    app:layout_constraintTop_toTopOf="@+id/scan_go" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Scan Go"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton5"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+                <View
+                    android:id="@+id/qr_code"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/light_purple_bg"
+                    app:layout_constraintStart_toEndOf="@+id/scan_go"
+                    app:layout_constraintTop_toTopOf="@+id/scan_go" />
+
+                <ImageButton
+                    android:id="@+id/imageButton11"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_bottom"
+                    android:src="@mipmap/qr_code"
+                    app:layout_constraintStart_toStartOf="@+id/qr_code"
+                    app:layout_constraintTop_toTopOf="@+id/qr_code" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="QR Code"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton11"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+
+                <View
+                    android:id="@+id/link_cards"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/light_purple_bg"
+                    app:layout_constraintStart_toEndOf="@+id/qr_code"
+                    app:layout_constraintTop_toTopOf="@+id/scan_go" />
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_bottom"
+                    android:src="@mipmap/credis_cards"
+                    app:layout_constraintStart_toStartOf="@+id/link_cards"
+                    app:layout_constraintTop_toTopOf="@+id/link_cards" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Credis Cards"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton8"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/light_purple_bg"
+                    app:layout_constraintStart_toEndOf="@+id/link_cards"
+                    app:layout_constraintTop_toTopOf="@+id/link_cards" />
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_bottom"
+                    android:src="@mipmap/mutual_funds"
+                    app:layout_constraintStart_toStartOf="@+id/view9"
+                    app:layout_constraintTop_toTopOf="@+id/view9" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Mutual Funds"
+                    android:textColor="#000"
+                    android:textSize="13sp"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton9"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/light_purple_bg"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/view9"
+                    app:layout_constraintTop_toTopOf="@+id/view9" />
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/button_bottom"
+                    android:src="@mipmap/fixe_dep"
+                    app:layout_constraintStart_toStartOf="@+id/view10"
+                    app:layout_constraintTop_toTopOf="@+id/view10" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Fixe Dep"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="@+id/imageButton10"
+                    app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
